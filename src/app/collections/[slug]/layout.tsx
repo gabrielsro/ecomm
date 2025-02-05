@@ -21,7 +21,8 @@ export default function Layout({ children, params }: LayoutProps) {
 
 //Suspense boundary for a layout:
 
-async function CollectionsLayout({ children, params: { slug } }: LayoutProps) {
+async function CollectionsLayout({ children, params }: LayoutProps) {
+  const { slug } = await params;
   const collection = await getCollectionBySlug(
     await getWixServerClient(),
     slug,
