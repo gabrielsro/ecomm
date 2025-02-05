@@ -1,4 +1,4 @@
-import { WIX_STORES_APP_ID, WIX_STORES_APP_ID_ALT } from "@/lib/constants";
+import { WIX_STORES_APP_ID_ALT } from "@/lib/constants";
 import { findVariant } from "@/lib/utils";
 import { WixClient } from "@/lib/wix-client.base";
 import { products } from "@wix/stores";
